@@ -9,6 +9,30 @@ class Item {
 }
 
 var allcat = [];
+var prodList = [
+  'Meat',
+  'Diary',
+  'Fish',
+  'Fruit & Vegetables',
+  'Cupboard',
+  'Bakery',
+  'Drinks',
+  'Alternative'
+];
+
+//Present Product List - Variables
+var meatList = [];
+var diaryList = [];
+var fishList = [];
+var fruitVegList = [];
+var cupboardList = [];
+var bakeryList = [];
+var drinksList = [];
+var alternativeList = [];
+
+//Product Divs
+var productAll = document.getElementById('rowAll');
+var prodDivs;
 
 var meat = [];
 allcat.push(meat);
@@ -122,3 +146,48 @@ console.log(
     " and it's Co2 emission is: " +
     allcat[1][1].co2
 );
+
+// Product Loop - Event Click
+function getAllCategories() {
+  for (let i = 0; i < 8; i++) {
+    meatList.push(allcat[0][i].name);
+    diaryList.push(allcat[1][i].name);
+    fishList.push(allcat[2][i].name);
+    fruitVegList.push(allcat[3][i].name);
+    cupboardList.push(allcat[4][i].name);
+    bakeryList.push(allcat[5][i].name);
+    drinksList.push(allcat[6][i].name);
+    alternativeList.push(allcat[7][i].name);
+  }
+}
+getAllCategories();
+console.log(prodList);
+
+// Create Divs for Products
+
+function createProduct() {
+  for (let i = 0; i < 8; i++) {
+    // Div + bootstrap class
+    prodDivs = document.createElement('div');
+    prodDivs.setAttribute('class', 'col-md-4');
+    productAll.appendChild(prodDivs)
+    console.log(prodDivs);
+    // Image Product Category
+    prodImg = document.createElement('img');
+    prodImg.setAttribute('src', `/images/${i+1}.jpg`);
+    prodImg.setAttribute('class', 'imgStyle');
+    prodDivs.appendChild(prodImg)
+    // Titel
+    prodTitel = document.createElement('h4');
+    prodTitelText = document.createTextNode(prodList[i]);
+    prodTitel.appendChild(prodTitelText);
+    prodDivs.appendChild(prodTitel);
+    // Product List
+    prodItems = document.createElement('p');
+    prodItemsText = document.createTextNode(allcat[0][i].name);
+    prodItems.appendChild(prodItemsText);
+    console.log(prodItems)
+  }
+}
+
+createProduct();
