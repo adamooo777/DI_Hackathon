@@ -5,9 +5,11 @@ body {
 
 /* NAVBAR */
 .navbar-nav>li a {
-    text-transform: uppercase;
-    color: lightgrey;
-    font-size: 1.5em;
+    color: rgb(52, 136, 26);
+    font-size: 1.2em;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
     
 }
 
@@ -23,15 +25,6 @@ body {
 }
 
 
-/* HEADER TEXT EDIT */
-
-.headtxt {
-    font-size: 4em;
-}
-.headtxt2 {
-    font-size: 4em;
-}
-
 /* HEADER BACKGROUND */
 
 .masthead-content{
@@ -45,13 +38,28 @@ body {
   background-size: cover;
 }
 
-/* Products */
+/* blog */
 .main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 1.5em;
+
 }
 
+h1{
+    color:rgb(52, 136, 26);
+}
 
+h1, h4 {
+    font-family: "Abril Fatface", Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-family: "Anton";
+}
+
+b {
+    color: rgb(255, 115, 0);
+}

@@ -153,8 +153,8 @@ createItems(document.getElementById('collapseMeat').firstElementChild, 0);
 createItems(document.getElementById('collapseDairy').firstElementChild, 1);
 createItems(document.getElementById('collapseFish').firstElementChild, 2);
 createItems(document.getElementById('collapseFV').firstElementChild, 3);
-createItems(document.getElementById('collapseBakery').firstElementChild, 4);
-createItems(document.getElementById('collapseCupboard').firstElementChild, 5);
+createItems(document.getElementById('collapseCupboard').firstElementChild, 4);
+createItems(document.getElementById('collapseBakery').firstElementChild, 5);
 createItems(document.getElementById('collapseDrink').firstElementChild, 6);
 createItems(document.getElementById('collapseAlternative').firstElementChild, 7);
 

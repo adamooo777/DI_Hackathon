@@ -1,13 +1,16 @@
 body {
     margin: 0 auto;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 
 /* NAVBAR */
 .navbar-nav>li a {
-    text-transform: uppercase;
-    color: lightgrey;
-    font-size: 1.5em;
+    color: rgb(52, 136, 26);
+    font-size: 1.2em;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
 }
 
 .navbar {
@@ -17,18 +20,20 @@ body {
 
 .logo {
     height: 2.5rem;
-    width: 5rem;
-    
+    width: 5rem; 
 }
-
 
 /* HEADER TEXT EDIT */
 
 .headtxt {
-    font-size: 4em;
+    font-size: 2.5em;
+    font-family: "Anton", Arial, Helvetica, sans-serif;
+    color: black;
 }
 .headtxt2 {
-    font-size: 4em;
+    font-size: 3.5em;
+    font-family: "Anton", Arial, Helvetica, sans-serif;
+    color: whitesmoke;
 }
 
 /* HEADER BACKGROUND */
@@ -46,6 +51,10 @@ body {
 
 /* Products */
 .main {
+    margin-left: 6rem;
+    margin-right: 6rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -53,4 +62,19 @@ body {
     margin-top: 1.5em;
 }
 
+.allbtn{
+    height: 8rem;
+    width: 12rem;
+}
 
+
+
+.results {
+    margin-left: 6rem;
+    margin-right: 6rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: flex;
+    align-self: start;
+    
+}
