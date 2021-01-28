@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_aviva.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/8da8b21c5d.js" crossorigin="anonymous"></script>
     <title>CarboFree</title>
 </head>
 <body>
@@ -38,117 +36,130 @@
             </div>
         </div>
   </header>
-  <main>
-    <section class="products">
-        <div class="accordion">
-            <div class="card section meat" id="meat">
-                <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link " data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Meat
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="card-body meatProducts">
-                        <div>meat1</div>
-                        <div>meat2</div>
-                        <div>meat3</div>
-                        <div>meat4</div>
-                        <div>meat5</div>
-                        <div>meat6</div>
-                        <div>meat7</div>
-                        <div>meat8</div>
+  <section class="main">
+        <div class="productsMeat" id="productsMeat">
+            <p class="meatProducts">
+                <button class="btn btn-transparent" type="button" data-toggle="collapse" data-target="#collapseMeat" aria-expanded="false" aria-controls="collapseMeat">Meat</button>
+            </p>
+            <div class="collapse" id="collapseMeat">
+                <div class="card card-body">
+                    <div class="beef" id="beef">
+                        <label for="beef">Beef</label>
+                        <input type="checkbox">
+                    </div>
+                    <div class="lamb" id="lamb">
+                        <label for="lamb">Lamb</label>
+                        <input type="checkbox">
+                    </div>
+                    <div class="chicken" id="chicken">
+                        <label for="chicken">Chicken</label>
+                        <input type="checkbox">
                     </div>
                 </div>
             </div>
+
         </div>
-        <!-- <div class="fish section" id="fish" style="background-color: url(sections/fish_edited.jpg);">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="productsDairy" id="productsDairy">
+            <p class="dairyProducts">
+                <button class="btn btn-transparent" type="button" data-toggle="collapse" data-target="#collapseDairy" aria-expanded="false" aria-controls="collapseMeat">Dairy</button>
+            </p>
+            <div class="collapse" id="collapseDairy">
+                <div class="card card-body">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </div>
         </div>
-        <div class="dairy section" id="dairy" style="background-color: url(sections/dairy_edited.jpg);">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-      </div>
-      <div class="fruit_veg section" id="fruit_veg" style="background-color: url(sections/fruitveg_edited.jpg);">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-      </div>
-      <div class="bakery section" id="bakery" style="background-color: url(sections/bakery_edited.jpg);">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-      </div>
-      <div class="cupboard section" id="cupboard" style="background-color: url(sections/cupboard_edited.jpg);">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-      </div>
-      <div class="drinks section" id="drinks" style="background-color: url(sections/drinks_edited.jpg);">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-      </div>
-      <div class="alternative section" id="alternative" style="background-color: url(sections/alternative_edited.jpg);">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-      </div> -->
-    </section>
+        <div class="productsFish" id="productsFish">
+            <p class="fishProducts">
+                <button class="btn btn-transparent" type="button" data-toggle="collapse" data-target="#collapseFish" aria-expanded="false" aria-controls="collapseFish">Fish</button>
+            </p>
+            <div class="collapse" id="collapseFish">
+                <div class="card card-body">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </div>
+        </div>
+        <div class="productsFV" id="productsFV">
+            <p class="fvProducts">
+                <button class="btn btn-transparent" type="button" data-toggle="collapse" data-target="#collapseFV" aria-expanded="false" aria-controls="collapseFV">Fruits & Vegetables</button>
+            </p>
+            <div class="collapse" id="collapseFV">
+                <div class="card card-body">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </div>
+        </div>
+        <div class="productsBakery" id="productsBakery">
+            <p class="bakeryProducts">
+                <button class="btn btn-transparent" type="button" data-toggle="collapse" data-target="#collapseBakery" aria-expanded="false" aria-controls="collapseBakery">Bakery</button>
+            </p>
+            <div class="collapse" id="collapseBakery">
+                <div class="card card-body">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </div>
+        </div>
+        <div class="productsCupboard" id="productsCupboard">
 
-  </main>
+            <p class="cupboardProducts">
+                <button class="btn btn-transparent" type="button" data-toggle="collapse" data-target="#collapseCupboard" aria-expanded="false" aria-controls="collapseCupboard">Cupboard</button>
+            </p>
+            <div class="collapse" id="collapseCupboard">
+                <div class="card card-body">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </div>
+        </div>
+        <div class="productsDrink" id="productsDrink">
+
+            <p class="drinkProducts">
+                <button class="btn btn-transparent" type="button" data-toggle="collapse" data-target="#collapseDrink" aria-expanded="false" aria-controls="collapseDrink">Drinks</button>
+            </p>
+            <div class="collapse" id="collapseDrink">
+                <div class="card card-body">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </div>
+        </div>
+        <div class="productsAlternative" id="productsAlternative">
+
+            <p class="alternativeProducts">
+                <button class="btn btn-transparent" type="button" data-toggle="collapse" data-target="#collapseAlternative" aria-expanded="false" aria-controls="collapseAlternative">Fish</button>
+            </p>
+            <div class="collapse" id="collapseAlternative">
+                <div class="card card-body">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </div>
+        </div>
+  </section>
 
 
 
-  
 
 
 
-  <footer>
-    <hr>
-    <span class="copyright">&#169;</span>
-    <span class="img_rights">Images by <a href="https://unsplash.com/"> Unsplash</a></span>   
-  </footer>
-           
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+      
+    
+    
+
+
 </body>
 </html>

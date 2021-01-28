@@ -50,16 +50,17 @@ img {
   background-size: cover;
 }
 
-.img
-
-/* Sections */
-/* .products{
-    height: auto;
-    width: auto;
-} */
-
-.section {
-    height: 50px;
-    width: 50px;
-    border: 10px;
+/* Products */
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 4rem;
 }
+
+
+.meatbtn {
+    border: green;
+}
+
