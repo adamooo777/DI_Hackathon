@@ -3,7 +3,7 @@
 }
 
 .col-md-4 {
-  padding: 50px;
+  padding: 40px;
   border: 2px solid black;
 }
 
@@ -15,4 +15,14 @@ img {
 
 h4 {
   text-align: center;
+}
+
+.divCollapse {
+  text-align: center;
+}
+
+.btn-primary {
+  border: 2px solid Black !important;
+  background-color: white !important;
+  color: black !important;
 }

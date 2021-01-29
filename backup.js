@@ -161,21 +161,24 @@ function createProduct() {
     prodDivs.appendChild(prodTitel);
     // Prepare Product List
     allCategories = allcat[i];
-    console.log(allCategories);
+  //  console.log(allCategories);
+    // Bootstrap component
+
+    prodBoot.innerHTML = "Test";
+    prodBoot.appendChild(prodDivs);
+
 
     // Product List
-    var btn = document.createElement('div'); // Create a <button> element
-    btn.innerHTML = `<p class="divCollapse">
-<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample${i}" aria-expanded="false" aria-controls="collapseExample">
-  Read More
-</button>
-</p>
-<div class="collapse" id="collapseExample${i}">
-<div class="card card-body">
-  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-</div>
-</div>`; // Insert text
-    prodDivs.appendChild(btn); // Append <button> to <body>
+    prodItems = document.createElement('p');
+    console.log(prodItems)
+  //  allCategories = allcat[i];
+  //  prodItems.innerHTML = String(allCategories);
+    //prodItems.appendChild(categories);
+  //  prodTitel.appendChild(prodItems);
+    //prodItemsText = document.createTextNode(category1);
+    //prodItems.appendChild(prodItemsText);
+    //prodTitel.appendChild(prodItems);
+    //console.log(prodItems);
   }
 }
 
