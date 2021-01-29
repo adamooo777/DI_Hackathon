@@ -163,16 +163,25 @@ function createProduct() {
     allCategories = allcat[i];
     console.log(allCategories);
 
-    // Product List
+    // Product List - Bootstrap Collapse (https://getbootstrap.com/docs/5.0/components/collapse/)
     var btn = document.createElement('div'); // Create a <button> element
     btn.innerHTML = `<p class="divCollapse">
-<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample${i}" aria-expanded="false" aria-controls="collapseExample">
-  Read More
-</button>
-</p>
-<div class="collapse" id="collapseExample${i}">
-<div class="card card-body">
-  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample${i}" aria-expanded="false" aria-controls="collapseExample">
+     Read More
+  </button>
+      </p>
+  <div class="collapse" id="collapseExample${i}">
+  <div class="card card-body">
+        <ul class="checkStyle">
+         <li><input type="checkbox" class="check"><label>${allcat[i][0].name} + ${allcat[i][0].co2}</label></li>
+         <li><input type="checkbox" class="check"><label>${allcat[i][1].name} + ${allcat[i][1].co2}</label></li>
+         <li><input type="checkbox" class="check"><label>${allcat[i][2].name} + ${allcat[i][2].co2}</label></li>
+         <li><input type="checkbox" class="check"><label>${allcat[i][3].name} + ${allcat[i][3].co2}</label></li>
+         <li><input type="checkbox" class="check"><label>${allcat[i][4].name} + ${allcat[i][4].co2}</label></li>
+         <li><input type="checkbox" class="check"><label>${allcat[i][5].name} + ${allcat[i][5].co2}</label></li>
+         <li><input type="checkbox" class="check"><label>${allcat[i][6].name} + ${allcat[i][6].co2}</label></li>
+         <li><input type="checkbox" class="check"><label>${allcat[i][7].name} + ${allcat[i][7].co2}</label></li>
+        </ul>
 </div>
 </div>`; // Insert text
     prodDivs.appendChild(btn); // Append <button> to <body>

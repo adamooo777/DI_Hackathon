@@ -3,7 +3,8 @@
 }
 
 .col-md-4 {
-  padding: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
   border: 2px solid black;
 }
 
@@ -26,3 +27,17 @@ h4 {
   background-color: white !important;
   color: black !important;
 }
+
+.card-body {
+  border: none !important;
+}
+
+.checkStyle {
+  font-size: 20px;
+  list-style-type: none;
+}
+
+.check {
+  margin-right: 20px !important;
+}
+
