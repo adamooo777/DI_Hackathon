@@ -202,3 +202,20 @@ function selectItem(event) {
     }
     diagram();
 }
+
+//--------------------------ANIMATION FOR CATEGORIES------------------------------------
+let divsanim = document.getElementsByClassName('btn-transparent');
+for (let i = 0; i < divsanim.length; i++) {
+    divsanim[i].addEventListener('mouseover', mouseover);
+    divsanim[i].addEventListener('mouseout', mouseout);
+    divsanim[i].style.opacity = '0.8';
+}
+function mouseover(event){
+    event.target.style.opacity = '1.0';
+    event.target.style.transform = 'scale(1.1)';
+}
+function mouseout(event){
+    event.target.style.opacity = '0.8';
+    event.target.style.transform = 'scale(1.0)';
+}
+//--------------------------------------------------------------------------------------
