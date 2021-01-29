@@ -21,6 +21,7 @@ meat.push(new Item('104', 'Veal', 35700)); // 3
 meat.push(new Item('105', 'Sausage', 8000)); // 4
 meat.push(new Item('106', 'Turkey', 10900)); // 5
 meat.push(new Item('107', 'Deli Meat', 8000)); // 6
+meat.push(new Item('108', 'Salami', 9300)); // 7
 
 var diary = [];
 allcat.push(diary);
@@ -29,8 +30,9 @@ diary.push(new Item('202', 'Hard cheese', 13500)); // 1
 diary.push(new Item('203', 'Butter', 23800)); // 2
 diary.push(new Item('204', 'Yoghurt', 1250)); // 3
 diary.push(new Item('205', 'Cottage Cheese', 1950)); // 4
-diary.push(new Item('206', 'Crème fraîch', 7600)); // 5
+diary.push(new Item('206', 'Crème fraîche', 7600)); // 5
 diary.push(new Item('207', 'Margarine', 1350)); // 6
+diary.push(new Item('208', 'Eggs', 1950)); // 7
 
 var fish = [];
 allcat.push(fish);
@@ -48,8 +50,8 @@ allcat.push(fruitVeg);
 fruitVeg.push(new Item('401', 'Apple', 550)); // 0
 fruitVeg.push(new Item('402', 'Banana', 1370)); // 1
 fruitVeg.push(new Item('403', 'Orange', 1300)); // 2
-fruitVeg.push(new Item('404', 'Avocado', 2500)); // 3
-fruitVeg.push(new Item('405', 'Onion', 80)); // 4
+fruitVeg.push(new Item('404', 'Avocado', 2700)); // 3
+fruitVeg.push(new Item('405', 'Onion', 800)); // 4
 fruitVeg.push(new Item('406', 'Potatoe', 2900)); // 5
 fruitVeg.push(new Item('407', 'Tomato', 1100)); // 6
 fruitVeg.push(new Item('408', 'Cucumber', 140)); // 7
@@ -81,10 +83,11 @@ allcat.push(drinks);
 drinks.push(new Item('701', 'Coffee', 2500)); // 0
 drinks.push(new Item('702', 'Black Tea', 1900)); // 1
 drinks.push(new Item('703', 'Coca Cola', 1656)); // 2
-drinks.push(new Item('704', 'Coca Zero', 1150)); // 3
+drinks.push(new Item('704', 'Coke Zero', 1150)); // 3
 drinks.push(new Item('705', 'Fanta', 1656)); // 4
 drinks.push(new Item('706', 'Sprite', 1656)); // 5
 drinks.push(new Item('707', 'Bottled Water', 1720)); // 6
+drinks.push(new Item('708', 'Orange Juice',1670)); // 7
 
 var alternative = [];
 allcat.push(alternative);
