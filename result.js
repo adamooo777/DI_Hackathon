@@ -178,10 +178,7 @@ createItems(document.getElementById('collapseFV').firstElementChild, 3);
 createItems(document.getElementById('collapseCupboard').firstElementChild, 4);
 createItems(document.getElementById('collapseBakery').firstElementChild, 5);
 createItems(document.getElementById('collapseDrink').firstElementChild, 6);
-createItems(
-  document.getElementById('collapseAlternative').firstElementChild,
-  7
-);
+createItems(document.getElementById('collapseAlternative').firstElementChild, 7);
 
 function createItems(group, num) {
   for (let i = 0; i < allcat[num].length; i++) {
