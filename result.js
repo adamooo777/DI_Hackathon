@@ -136,11 +136,11 @@ function diagram() {
   if (amount == 0) {
     totalTable.innerHTML = `<p class="totalTable">Click on categories to select items</p>`;
   } else {
-    totalTable.innerHTML = `<p class="totalTable">Total Amount of Selected Emission in Co<sub>2</sub>: ${amount}</p>`;
+    totalTable.innerHTML = `<p class="totalTable">Total Amount of Selected Emission in CO<sub>2</sub>: ${amount}</p>`;
     totalItems.innerHTML = '';
     for (let i = 0; i < colorlist.length; i++) {
       let liItems = document.createElement('li');
-      liItems.innerHTML = `<li class="itemsSelect" style="margin-right: 48px; margin-top: 12px; display: flex"><div class="box" style="background-color: ${colorlist[i]}; margin-right: 12px; border-radius: 50%"></div><p>${labelslist[i]} ${datalist[i]} Co<sub>2</sub></p></li>`;
+      liItems.innerHTML = `<li class="itemsSelect" style="margin-right: 48px; margin-top: 12px; display: flex"><div class="box" style="background-color: ${colorlist[i]}; margin-right: 12px; border-radius: 50%"></div><p>${labelslist[i]} ${datalist[i]} CO<sub>2</sub></p></li>`;
       totalItems.appendChild(liItems);
     }
   }
