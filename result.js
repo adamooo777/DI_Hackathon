@@ -164,7 +164,7 @@ function diagram() {
       ]
     },
     options: {
-      events: ['click']
+      events: ['touchmove']
     }
   });
 }
